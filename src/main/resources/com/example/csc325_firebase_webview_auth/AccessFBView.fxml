@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="467.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.modelview.AccessFBView">
+<AnchorPane prefHeight="467.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.modelview.AccessFBView">
    <children>
       <VBox alignment="CENTER_RIGHT" layoutX="7.0" prefHeight="166.0" prefWidth="485.0" spacing="10.0">
          <children>
@@ -32,6 +28,7 @@
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
                   </Button>
+                  <Button mnemonicParsing="false" text="Login" onAction="#login"/>
                   <Button fx:id="switchroot" mnemonicParsing="false" onAction="#switchToSecondary" text="Switch" textAlignment="CENTER" />
                </children>
             </HBox>

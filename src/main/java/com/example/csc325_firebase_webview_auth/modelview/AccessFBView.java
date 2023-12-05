@@ -80,7 +80,7 @@ public class AccessFBView {
     }
 
     public void addData() {
-
+        System.out.println("Add Data");
         DocumentReference docRef = App.fstore.collection("References").document(UUID.randomUUID().toString());
 
         Map<String, Object> data = new HashMap<>();
@@ -140,8 +140,22 @@ public class AccessFBView {
         }
     }
 
-    public boolean registerUser() {
-        UserRecord.CreateRequest request = new UserRecord.CreateRequest()
+    public void login() {
+        try {
+            App.setRoot("Login.fxml");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void registerUser() {
+        //System.out.println("Register User");
+        try {
+            App.setRoot("Registration.fxml");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+       /* UserRecord.CreateRequest request = new UserRecord.CreateRequest()
                 .setEmail("user@example.com")
                 .setEmailVerified(false)
                 .setPassword("secretPassword")
@@ -159,6 +173,7 @@ public class AccessFBView {
            // Logger.getLogger(FirestoreContext.class.getName()).log(Level.SEVERE, null, ex);
             return false;
         }
-
+*/
     }
+
 }

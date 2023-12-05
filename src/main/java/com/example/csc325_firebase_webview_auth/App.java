@@ -20,6 +20,8 @@ public class App extends Application {
     public static Scene scene;
     private final FirestoreContext contxtFirebase = new FirestoreContext();
 
+    public static String filename = "C:\\Users\\CSXRP\\CSC325_Firebase_webview_Auth2\\src\\main\\java\\com\\example\\csc325_firebase_webview_auth\\modelview\\users.txt";
+
     @Override
     public void start(Stage primaryStage) throws Exception {
         fstore = contxtFirebase.firebase();

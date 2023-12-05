@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.modelview.RegistrationController">
+   <children>
+      <TextField fx:id="lName" layoutX="226.0" layoutY="50.0" />
+      <TextField fx:id="pNum" layoutX="226.0" layoutY="93.0" />
+      <TextField fx:id="eMail" layoutX="226.0" layoutY="143.0" />
+      <TextField fx:id="uName" layoutX="226.0" layoutY="200.0" />
+      <Label layoutX="122.0" layoutY="12.0" prefHeight="17.0" prefWidth="65.0" text="Firstname" />
+      <Label layoutX="122.0" layoutY="54.0" prefHeight="17.0" prefWidth="65.0" text="Lastname" />
+      <Label layoutX="127.0" layoutY="147.0" prefHeight="17.0" prefWidth="38.0" text="Email" />
+      <Label layoutX="125.0" layoutY="204.0" prefHeight="17.0" prefWidth="65.0" text="Username" />
+      <TextField fx:id="pWord" layoutX="226.0" layoutY="246.0" />
+      <TextField fx:id="fName" layoutX="226.0" layoutY="8.0" />
+      <Label layoutX="123.0" layoutY="97.0" prefHeight="17.0" prefWidth="94.0" text="Phone Number" />
+      <Label layoutX="127.0" layoutY="250.0" prefHeight="17.0" prefWidth="65.0" text="Password" />
+      <Button fx:id="register" layoutX="264.0" layoutY="303.0" mnemonicParsing="false" onAction="#reg" text="Register" />
+      <Button fx:id="Login" layoutX="253.0" layoutY="348.0" mnemonicParsing="false" onAction="#login" text="Return to login" />
+   </children>
+</AnchorPane>
